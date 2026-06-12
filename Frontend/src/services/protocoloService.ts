@@ -8,13 +8,13 @@ export const protocoloService = {
   },
 
   listarTodos: async (): Promise<Protocolo[]> => {
-    const response = await api.get('/api/protocolos')
-    return response.data
+  const response = await api.get('/api/protocolos')
+  return response.data
   },
 
-  listarMeus: async (solicitante: string): Promise<Protocolo[]> => {
-    const response = await api.get(`/api/protocolos/meus?solicitante=${solicitante}`)
-    return response.data
+  listarMeus: async (): Promise<Protocolo[]> => {
+  const response = await api.get('/api/protocolos')
+  return response.data
   },
 
   buscarPorId: async (id: number): Promise<Protocolo> => {

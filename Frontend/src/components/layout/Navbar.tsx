@@ -21,8 +21,9 @@ export function Navbar() {
   }
 
   const navLinks = [
-    { path: '/', label: 'HOME' },
-    { path: '/protocolos', label: 'PROTOCOLOS' },
+  { path: '/', label: 'HOME' },
+  { path: '/protocolos', label: 'MEUS PROTOCOLOS' },
+  { path: '/protocolos/novo', label: 'CRIAR PROTOCOLO' },
   ]
 
   return (

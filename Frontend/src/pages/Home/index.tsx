@@ -2,7 +2,6 @@ import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { PageLayout } from '@/components/layout/PageLayout'
 import { useAuth } from '@/contexts/AuthContext'
-import { MapaBrasil } from '@/components/MapaBrasil'
 import {
   ArrowRight, FileText, Clock, CheckCircle2,
   Users, Shield, Zap, Globe, Bell, BarChart3,
@@ -290,8 +289,12 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="h-[580px] p-4" style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eef2ff 100%)' }}>
-              <MapaBrasil />
+            <div
+            className="h-[580px] p-4 flex items-center justify-center"
+            style={{ background: 'linear-gradient(180deg, #f8faff 0%, #eef2ff 100%)' }}>
+              <h2 className="text-gray-500 text-xl">
+              Mapa do Brasil indisponível
+              </h2>
             </div>
             <div className="border-t border-gray-100 p-6">
               <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Cidades com maior atividade</p>
